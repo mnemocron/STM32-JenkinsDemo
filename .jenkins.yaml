@@ -1,0 +1,17 @@
+pipeline:
+  agent:
+    any:
+  stages:
+    - stage: "Log Jenkins, Git and ARM-GCC versions"
+      steps:
+        - sh "arm-none-eabi-gcc --version "
+        - sh "java -version"
+        - sh "git --version"
+    - stage: "ARM GCC build"
+      steps:
+        - sh "echo 'make :)'"
+    - stage: "Final Jenkins YAML Pipeline Stage"
+      steps:
+        - sh "echo 'Jenkins Pipeline Complete'"
+
+
