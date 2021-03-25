@@ -18,6 +18,8 @@ The server that Jenkins runs on must have the `arm-none-eabi-gcc` compiler insta
 sudo apt install gcc-arm-none-eabi
 ```
 
+---
+
 ### Jenkins Config
 
 #### Build
@@ -42,3 +44,12 @@ st-flash --version
 st-flash write Debug/f303re_Voltmeter.bin 0x08000000
 echo "Done!"
 ```
+
+
+
+![img/config1.png](img/config1.png)
+![img/config2.png](img/config2.png)
+![img/config3.png](img/config3.png)
+![img/config4.png](img/config4.png)
+
+
