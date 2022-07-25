@@ -24,7 +24,7 @@ sudo apt install gcc-arm-none-eabi
 
 #### Build
 
-Execute shell
+Build Script for "Execute shell" window:
 
 ```bash
 echo "Tool versions"
@@ -38,18 +38,21 @@ cd $WORKSPACE/Debug
 pwd
 make all
 echo "Done!"
-echo "Uploading to Device under Test ..."
-echo "st-flash Version:"
-st-flash --version
-st-flash write Debug/f303re_Voltmeter.bin 0x08000000
-echo "Done!"
+# echo "Uploading to Device under Test ..."
+# echo "st-flash Version:"
+# st-flash --version
+# st-flash write Debug/f303re_Voltmeter.bin 0x08000000
+# echo "Done!"
 ```
-
-
 
 ![img/config1.png](img/config1.png)
 ![img/config2.png](img/config2.png)
 ![img/config3.png](img/config3.png)
 ![img/config4.png](img/config4.png)
 
+---
+
+### Github Webhooks
+
+![img/config_github.png](img/config_github.png)
 
